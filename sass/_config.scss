@@ -9,4 +9,8 @@ $very-dark-blue: hsl(216, 12%, 8%);
   border-radius: 25px;
   padding: 20px 25px 15px 25px;
   width: 350px;
+
+  @media(max-width: 768px) {
+    width: 300px;
+  }
 }

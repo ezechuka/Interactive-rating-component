@@ -20,6 +20,11 @@
     color: $white;
     transition: all 0.2s ease-in;
   }
+
+  @media(max-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .submit-btn {
