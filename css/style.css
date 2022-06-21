@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+.rd-btn, .submit-btn {
+  border-collapse: collapse;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Overpass", sans-serif;
+}
+
+.rd-btn {
+  color: #7c8798;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.rd-btn:hover {
+  background-color: #fb7413;
+  color: white;
+  transition: all 0.2s ease-in;
+}
+
+.submit-btn {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #fb7413;
+  color: white;
+  padding: 10px 0;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.submit-btn:hover {
+  background-color: white;
+  color: #fb7413;
+  transition: all 0.2s ease-in;
+}
+
+@keyframes shake-animation {
+  0% {
+    margin-left: 8px;
+  }
+  100% {
+    margin-right: 8px;
+  }
+}
+
+.shake {
+  animation: shake-animation;
+  animation-duration: 0.1s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 5;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #121417;
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  background-color: #252d37;
+  border-radius: 25px;
+  padding: 20px 25px 15px 25px;
+  width: 350px;
+}
+
+.container .container-content {
+  transition: all 0.2s ease-in;
+}
+
+.container .container-content .icon-container {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  align-items: center;
+  justify-content: center;
+}
+
+.container .container-content .rating-container {
+  margin: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .feedback-container .feedback-content {
+  display: flex;
+  padding: 15px 0 22px 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .feedback-container .feedback-content .selected-info {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 5px 15px;
+  border-radius: 25px;
+  color: #fb7413;
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+.container .feedback-container .feedback-content .subtitle2 {
+  text-align: center;
+}
+
+.container .subtitle1 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 25px;
+}
+
+.container .subtitle2 {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #7c8798;
+}
+
+.container .unshown {
+  display: none;
+}
+
+.container .active {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}

@@ -1,0 +1,58 @@
+%btn {
+  border-collapse: collapse;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Overpass", sans-serif
+}
+
+.rd-btn {
+  @extend %btn;
+  color: $medium-grey;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 14px;
+  background-color: rgba($color: $white, $alpha: 0.05);
+
+  &:hover {
+    background-color: $orange;
+    color: $white;
+    transition: all 0.2s ease-in;
+  }
+}
+
+.submit-btn {
+  @extend %btn;
+  width: 100%;
+  border-radius: 20px;
+  background-color: $orange;
+  color: $white;
+  padding: 10px 0;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+  &:hover {
+    background-color: $white;
+    color: $orange;
+    transition: all 0.2s ease-in;
+  }
+
+  @keyframes shake-animation {
+    0% {
+      margin-left: 8px;
+    }
+    100% {
+      margin-right: 8px;
+    }
+  }
+}
+
+.shake {
+  animation: shake-animation;
+  animation-duration: 0.1s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 5;
+}

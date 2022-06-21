@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+@import "config";
+@import "buttons";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $very-dark-blue;
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+}
+
+.container {
+  @include set-background;
+
+  .container-content {
+    transition: all 0.2s ease-in;
+
+    .icon-container {
+      width: 35px;
+      height: 35px;
+      display: flex;
+      border-radius: 50%;
+      background-color: rgba($color: $white, $alpha: 0.05);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .rating-container {
+      margin: 22px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .feedback-container {
+    .feedback-content {
+      display: flex;
+      padding: 15px 0 22px 0;
+      flex-direction: column;
+      align-items: center;
+
+      .selected-info {
+        background-color: rgba($color: $white, $alpha: 0.05);
+        padding: 5px 15px;
+        border-radius: 25px;
+        color: $orange;
+        font-size: 14px;
+        margin-top: 25px;
+      }
+
+      .subtitle2 {
+        text-align: center;
+      }
+    }
+  }
+
+  .subtitle1 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 25px;
+  }
+
+  .subtitle2 {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+    color: $medium-grey;
+  }
+
+  .unshown {
+    display: none;
+  }
+
+  .active {
+    background-color: rgba($color: $white, $alpha: 0.5);
+    color: $white;
+  }
+}

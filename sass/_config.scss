@@ -1,0 +1,12 @@
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$medium-grey: hsl(216, 12%, 54%);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+
+@mixin set-background {
+  background-color: $dark-blue;
+  border-radius: 25px;
+  padding: 20px 25px 15px 25px;
+  width: 350px;
+}
